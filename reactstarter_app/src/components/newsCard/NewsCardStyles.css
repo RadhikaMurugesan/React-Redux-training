@@ -1,37 +1,36 @@
-.cardBox{
+.cardBox {
     width: 600px;
-  border: 5px solid #282c34;
-  padding: 20px;
-  margin: 20px;
+    border: 5px solid #282c34;
+    padding: 20px;
+    margin: 20px;
 }
 
-.profileContainer{
+.profileContainer {
     display: flex;
     flex-direction: row;
-     
-  }
+}
 
-.img{
+.img {
     display: flex;
     align-items: flex-start;
-    
 }
-.image{
+
+.image {
     border-radius: 50%;
 }
 
-.name{
+.name {
     display: flex;
-   
 }
 
 .newsImg {
-   height: 50%;
+    height: 50%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
-.desc{
+
+.desc {
     text-align: left;
 }
