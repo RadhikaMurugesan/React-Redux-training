@@ -1,40 +1,31 @@
 import React from 'react';
-import './NewsCardStyles.css';
+import './Styles.css';
 
-class NewsCard extends React.Component {
-   constructor(props) {
-      super(props)
 
-   }
-   render() {
-      console.log(this.props.data)
 
-      const data = this.props.data;
-      const listItems = data.map((listData) =>
-         <div class='cardBox'>
-            <div class='profileContainer'>
-               <div class="img">
-                  <img class="image" src={listData.profileImage} alt="Smiley face" width="42" height="42" />
-               </div>
-               <div class='name'>
-                  <p><i>{listData.name}</i></p>
-               </div>
-            </div>
-
-            <div class="newsDesc">
-               <img class="newsImg" src={listData.newsImage} alt="Smiley face"></img>
-               <p class="desc">{listData.newsDesc}</p>
-            </div>
-
+const NewsCard = (props) => {
+   const { value } = props;
+   return <div className='cardBox'>
+      <div className='profileContainer'>
+         <div className="img">
+            <img className="image" src={value.profileImage} alt="Smiley face" width="42" height="42" />
          </div>
-      );
-      return (
-         <ul>
-            {listItems}
-         </ul>
+         <div className='name'>
+            <p><i>{value.name}</i></p>
+         </div>
+      </div>
 
-      )
-   }
-}
+      <div className="newsDesc">
+         <img className="newsImg" src={value.newsImage} alt="Smiley face"></img>
+         <p className="desc">{value.newsDesc}</p>
+      </div>
+
+   </div>;
+};
 
 export default NewsCard;
+
+
+
+
+
